@@ -12,8 +12,10 @@ type DataMember struct {
 	jumlahRusak			int
 }
 
-func (member DataMember) Ucapan() {
-	fmt.Println("Selamat datang kembali di Perpustakaan Daerah, ", member.nama)
+func Anggota(nama string, nonAnggota func(string) bool) {
+	if nonAnggota(nama) {
+		fmt.Printf("Mohon maaf, %s belum terdaftar sebagi anggota Perpustakaan Daerah. Harap mendaftar terlebih dahulu. \n", nama)
+	}
 }
 
 func TampilData(){
