@@ -13,12 +13,12 @@ type DataMember struct {
 }
 
 
-func (member dataMember) Ucapan() {
+func (member DataMember) Ucapan() {
 	fmt.Println("Selamat datang kembali di Prpustakaan Daerah, ", member.nama)
 }
 
 func TampilData(){
-	member1 := dataMember{
+	member1 := DataMember{
 		nama: "Rizka",
 		noAnggota: "1132",
 		judulBuku: "Aroma Karsa, Supernova",
