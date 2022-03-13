@@ -2,7 +2,7 @@ package data
 
 import "fmt"
 
-type dataMember struct {
+type DataMember struct {
 	nama                string
 	noAnggota           string
 	judulBuku           string
