@@ -12,9 +12,8 @@ type DataMember struct {
 	jumlahRusak			int
 }
 
-
 func (member DataMember) Ucapan() {
-	fmt.Println("Selamat datang kembali di Prpustakaan Daerah, ", member.nama)
+	fmt.Println("Selamat datang kembali di Perpustakaan Daerah, ", member.nama)
 }
 
 func TampilData(){
@@ -27,14 +26,19 @@ func TampilData(){
 		jumlahHari: 3,
 		jumlahRusak: 1,
 	}
-
 	fmt.Println("Nama: ", member1.nama)
-	
+	fmt.Println("No. Anggota: ", member1.noAnggota)
+	fmt.Println("Buku yang dipinjam: ", member1.judulBuku)
 }
+
 func Denda(jumlahTelat, jumlahHari, jumlahRusak int) (int, int) {
 		const satuanDenda int = 10000
 		const satuanRusak int = 50000
 		bayarDenda := jumlahTelat * jumlahHari * satuanDenda
 		bayarRusak := jumlahRusak * satuanRusak
 		return bayarDenda, bayarRusak
+}
+
+func TotalDenda(bayarDenda, bayarRusak int) int {
+	return bayarDenda + bayarRusak 
 }
