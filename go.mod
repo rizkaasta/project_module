@@ -1,3 +1,3 @@
-module github.com/rizkaasta/project_module
+module github.com/rizkaasta/project_module/v2
 
 go 1.17
