@@ -13,7 +13,7 @@ type dataMember struct {
 }
 
 
-func (member dataMember) ucapan() {
+func (member dataMember) Ucapan() {
 	fmt.Println("Selamat datang kembali di Prpustakaan Daerah, ", member.nama)
 }
 
